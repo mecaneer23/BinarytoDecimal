@@ -10,18 +10,17 @@ public class BinarytoDecimal {
 	}
 	public static int BinaryToDecimal(Long binaryNumber) {
 		String value = Long.toString(binaryNumber);
+		int length = value.length();
 		int output = 0;
-		for (int position = 0; position < value.length(); position++) {
-			if (value.charAt(position) == '1') {
-				if (position == value.length() - 1) {
-					output++;
-				} else {
-					output += Math.pow(2, value.length() - 1 - position);
-				}
-			} else if (value.charAt(position) == '0') {
+		for (int position = 0; position < length; position++) {
+			char chr = value.charAt(position);
+			if (chr == '1') {
+				output += Math.pow(2, length - 1 - position);
+			} else if (chr == '0') {
 
 			} else {
 				System.err.println("Make sure you only input binary values");
+				System.exit(1);
 			}
 		}
 		return output;

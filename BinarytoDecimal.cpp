@@ -8,11 +8,7 @@ int BinaryToDecimal(long long binaryNumber) {
 	long output = 0;
 	for (long position = 0; position < value.length(); ++position) {
 		if (value.at(position) == '1') {
-			if (position == value.length() - 1) {
-				output++;
-			} else {
-				output += pow(2, value.length() - 1 - position);
-			}
+			output += pow(2, value.length() - 1 - position);
 		} else if (value.at(position) == '0') {
 
 		} else {

@@ -3,11 +3,7 @@ function BinaryToDecimal(binaryNumber) {
 	var output = 0;
 	for (position = 0; position < value.length; position++) {
 		if (value.charAt(position) == '1') {
-			if (position == value.length - 1) {
-				output++;
-			} else {
-				output += Math.pow(2, value.length - 1 - position);
-			}
+			output += Math.pow(2, value.length - 1 - position);
 		} else if (value.charAt(position) == '0') {
 			
 		} else {
@@ -16,14 +12,14 @@ function BinaryToDecimal(binaryNumber) {
 	}
 	return output;
 }
-function main() {
-	const readline = require('readline').createInterface({
-		input: process.stdin,
-		output: process.stdout
-	})
-	readline.question("Binary Number: ", num => {
-		console.log(BinaryToDecimal(num));
-		readline.close();
-	})
-}
-main()
+
+const readline = require('readline');
+
+r1 = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
+r1.question("Binary Number: ", function(num) {
+	console.log(BinaryToDecimal(num));
+	r1.close();
+});

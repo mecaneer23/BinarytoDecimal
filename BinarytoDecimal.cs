@@ -14,11 +14,7 @@ public class BinarytoDecimal {
 		int output = 0;
 		for (int position = 0; position < value.Length; position++) {
 			if (value[position] == '1') {
-				if (position == value.Length - 1) {
-					output++;
-				} else {
-					output += (int)(1 << value.Length - 1 - position);
-				}
+				output += (int)(1 << value.Length - 1 - position);
 			} else if (value[position] == '0') {
 
 			} else {

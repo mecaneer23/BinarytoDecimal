@@ -1,33 +1,26 @@
 #!/bin/bash
 
 function BinarytoDecimal() {
-	size=${#1}
-	output=0
-	position=0
-	while [ $position -lt $size ]
+	length=${#1};
+	output=0;
+	for ((position=0; position < $length; position++));
 	do
-		if [ ${1:position:1} -eq 1 ]
+		if [ ${1:position:1} -eq 1 ];
 		then
-			if [ $position -eq $(($size-1)) ] 
-			then
-				output=$((output+1))
-			else
-				output=$((output+$((2**$(($size-1-$position))))))
-			fi
-		elif [ ${1:position:1} -eq 0 ]
+			output=$((output+$((2**$(($length-1-$position))))));
+		elif [ ${1:position:1} -eq 0 ];
 		then
-			:	
+			:
 		else
-			echo Make sure you only input binary values
-			exit
-		fi
-		position=$(($position+1))
-	done
+			echo "Make sure you only input binary values";
+			exit;
+		fi;
+	done;
 }
 
-read -p "Binary Number: " input
-BinarytoDecimal $input
-echo $output
+read -p "Binary Number: " input;
+BinarytoDecimal $input;
+echo $output;
 
 # uncomment this line if running in windows
 # read -p "Press enter to quit..."

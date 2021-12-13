@@ -3,13 +3,11 @@ def BinarytoDecimal(binaryNumber)
 	output = 0
 	for position in 0..value.length
 		if value[position] == "1"
-			if position == value.length - 1
-				output += 1
-			else
-				output += 2**(value.length - 1 - position)
-			end
+			output += 2**(value.length - 1 - position)
 		elsif value[position] == "0"
 			nil
+		elsif value[position].to_i.between?(2, 9)
+			return "Make sure you only input binary values"
 		end
 	end
 	return output
