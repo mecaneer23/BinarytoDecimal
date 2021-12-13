@@ -1,6 +1,5 @@
 quiet
-    dogescript BinarytoDecimal.djs > BtD_djs.bin
-    js BtD_djs.bin
+    dogescript BinarytoDecimal.djs > temp.js; js temp.js; rm temp.js
 loud
 
 so readline
