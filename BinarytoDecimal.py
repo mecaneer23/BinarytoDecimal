@@ -2,7 +2,7 @@ def BinarytoDecimal(binaryNumber):
 	value = str(binaryNumber)
 	length = len(value)
 	output = 0
-	for position in range(0, length):
+	for position in range(length):
 		char = value[position]
 		if char == '1':
 			output += 2**(length - 1 - position)
