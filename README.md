@@ -1,11 +1,12 @@
 # BinarytoDecimal
 Binary to decimal converters in many languages
 
-### Current languages (21):
+### Current languages (22):
  - C
  - CoffeeScript
  - C++
  - C#
+ - Dart
  - DogeScript
  - Go
  - HTML (JavaScript)
