@@ -1,14 +1,15 @@
 #!/bin/bash
 
-function BinarytoDecimal() {
-	length=${#1};
+BinarytoDecimal() {
+	value=$1;
+	length=${#value};
 	output=0;
 	for ((position=0; position < $length; position++));
 	do
-		if [ ${1:position:1} -eq 1 ];
+		if [[ ${value:position:1} == 1 ]];
 		then
-			output=$((output+$((2**$(($length-1-$position))))));
-		elif [ ${1:position:1} -eq 0 ];
+			output=$((output+(2**(length-1-position))));
+		elif [[ ${value:position:1} == 0 ]];
 		then
 			:
 		else
@@ -16,11 +17,10 @@ function BinarytoDecimal() {
 			exit;
 		fi;
 	done;
+        echo $output;
 }
 
 read -p "Binary Number: " input;
-BinarytoDecimal $input;
-echo $output;
+echo $(BinarytoDecimal $input);
 
-# uncomment this line if running in windows
 # read -p "Press enter to quit..."
