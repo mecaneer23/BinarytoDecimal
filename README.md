@@ -2,6 +2,7 @@
 Binary to decimal converters in many languages
 
 ### Current languages (22):
+ - Bash
  - C
  - CoffeeScript
  - C++
@@ -11,16 +12,15 @@ Binary to decimal converters in many languages
  - Go
  - HTML (JavaScript)
  - Java
- - Julia
  - JavaScript
+ - Julia
  - Kotlin
  - Lua
- - PHP
  - Perl
+ - PHP
  - Powershell
  - Python
  - R (Rscript)
  - Ruby
- - Bash
  - Swift
  - TypeScript
