@@ -6,10 +6,11 @@ BinarytoDecimal() {
 	output=0;
 	for ((position=0; position < $length; position++));
 	do
-		if [[ ${value:position:1} == 1 ]];
+		char=${value:position:1};
+		if [[ $char == 1 ]];
 		then
 			output=$((output+(2**(length-1-position))));
-		elif [[ ${value:position:1} == 0 ]];
+		elif [[ $char == 0 ]];
 		then
 			:
 		else
