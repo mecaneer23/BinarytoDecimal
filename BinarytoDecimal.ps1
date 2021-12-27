@@ -1,26 +1,21 @@
 function BinarytoDecimal() {
-	param($number)
-	$size=$number.length
-	$output=0
-	$position=0
-	while ( $position -lt $size ) {
-		if ( $number.substring($position, 1) -eq "1" ) {
-			if ( $position -eq $(($size-1)) ) { 
-				$output=$output+1
-			} else {
-				$output=$output+[Math]::Pow(2, $size-1-$position)
-			}
-		} elseif ( $number.substring($position, 1) -eq 0 ) {
+	param($binaryNumber);
+	$value = $binaryNumber;
+	$len = $value.length;
+	$output = 0;
+	for ($position = 0; $position -lt $len; $position++) {
+		$char = $value.substring($position, 1);
+		if ( $char -eq "1" ) {
+			$output += [Math]::Pow(2, $len-1-$position);
+		} elseif ( $char -eq "0" ) {
 
 		} else {
-			write-output "Make sure you only input binary values"
-			exit
+			write-output "Make sure you only input binary values";
+			exit;
 		}
-		$position=$position+1
 	}
-	return $output
+	return $output;
 }
 
-$input_ = read-host -p "Binary Number"
-$out = BinarytoDecimal $input_
-write-output $out
+$input = read-host -p "Binary Number";
+write-output $(BinarytoDecimal $input);
