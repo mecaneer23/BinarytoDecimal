@@ -5,6 +5,7 @@ public class BinarytoDecimal {
 		System.out.print("Binary Number: ");
 		Scanner inp = new Scanner(System.in);
 		String input = inp.nextLine();
+		inp.close();
 		Long num = Long.parseLong(input);
 		System.out.println(BinaryToDecimal(num));
 	}
