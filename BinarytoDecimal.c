@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
 int BinarytoDecimal(int binaryNumber) {
 	if (binaryNumber == 0) {
 		return 0;
 	}
-	int len = floor(log10(abs(binaryNumber))) + 1;
+	int len = floor(log10(binaryNumber)) + 1;
 	char value[len + 1];
 	itoa(binaryNumber, value, 10);
 	int output = 0;
 	for (int position = 0; position < len; position++) {
-		if (value[position] == '1') {
-				output += pow(2, len - 1 - position);
-		} else if (value[position] == '0') {
+		char chr = value[position];
+		if (chr == '1') {
+			output += pow(2, len - 1 - position);
+		} else if (chr == '0') {
 
 		} else {
 			return -1;
