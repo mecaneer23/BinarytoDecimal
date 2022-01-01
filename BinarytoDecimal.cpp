@@ -7,13 +7,14 @@ int BinaryToDecimal(long long binaryNumber) {
 	string value = to_string(binaryNumber);
 	long output = 0;
 	for (long position = 0; position < value.length(); ++position) {
-		if (value.at(position) == '1') {
+		char chr = value.at(position);
+		if (chr == '1') {
 			output += pow(2, value.length() - 1 - position);
-		} else if (value.at(position) == '0') {
+		} else if (chr == '0') {
 
 		} else {
 			cout << "Make sure you only input binary values\n";
-			exit(0);
+			exit(-1);
 		}
 	}
 	return output;
