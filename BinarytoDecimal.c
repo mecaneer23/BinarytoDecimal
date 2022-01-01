@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <string.h>
 
 int BinarytoDecimal(int binaryNumber) {
 	if (binaryNumber == 0) {
