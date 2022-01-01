@@ -9,7 +9,7 @@ int BinarytoDecimal(int binaryNumber) {
 	}
 	int len = floor(log10(binaryNumber)) + 1;
 	char value[len + 1];
-	itoa(binaryNumber, value, 10);
+	sprintf(value, "%d", binaryNumber);
 	int output = 0;
 	for (int position = 0; position < len; position++) {
 		char chr = value[position];
@@ -32,6 +32,6 @@ int main(void) {
 	if (result == -1) {
 		printf("%s\n", "Make sure you only input binary values");
 	} else {
-		printf("%d", result);
+		printf("%d\n", result);
 	}
 }
