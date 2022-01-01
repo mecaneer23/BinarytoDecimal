@@ -1,3 +1,4 @@
+/* Compile with -lm (link math) flag */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
