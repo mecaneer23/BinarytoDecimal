@@ -2,7 +2,7 @@
 
 Binary to decimal converters in many languages
 
-## Current languages (23)
+## Current languages (24)
 
 - Bash
 - C
@@ -12,6 +12,7 @@ Binary to decimal converters in many languages
 - Dart
 - DogeScript
 - Go
+- Haskell
 - HTML (JavaScript)
 - Java
 - JavaScript
