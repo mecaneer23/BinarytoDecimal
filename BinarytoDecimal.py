@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def BinarytoDecimal(binaryNumber):
 	value = str(binaryNumber)
 	length = len(value)
