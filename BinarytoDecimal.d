@@ -5,7 +5,7 @@
 import std.stdio;
 import std.conv;
 import std.string;
-import std.math.exponential;
+import std.math;
 
 int BinarytoDecimal(int binaryNumber) {
 	string value = to!string(binaryNumber);
