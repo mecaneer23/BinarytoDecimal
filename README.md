@@ -2,7 +2,7 @@
 
 Binary to decimal converters in many languages
 
-## Current languages (25)
+## Current languages (26)
 
 - Bash
 - C
@@ -27,5 +27,6 @@ Binary to decimal converters in many languages
 - Python
 - R (Rscript)
 - Ruby
+- Rust
 - Swift
 - TypeScript
