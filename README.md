@@ -19,7 +19,7 @@ Binary to decimal converters in many languages
 - JavaScript
 - Julia
 - Kotlin
-- Lisp
+- Common Lisp
 - Lua
 - Perl
 - PHP
