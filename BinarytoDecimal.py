@@ -7,7 +7,7 @@ def BinarytoDecimal(binaryNumber):
 		if char == '1':
 			output += 2**(length - 1 - position)
 		elif char == '0':
-			pass
+			continue
 		else:
 			return "Make sure you only input binary values"
 	return output
