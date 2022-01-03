@@ -2,13 +2,14 @@
 
 Binary to decimal converters in many languages
 
-## Current languages (26)
+## Current languages (27)
 
 - Bash
 - C
-- CoffeeScript
-- C++
 - C#
+- C++
+- Clojure
+- CoffeeScript
 - Dart
 - DogeScript
 - F#
