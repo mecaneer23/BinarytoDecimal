@@ -2,7 +2,7 @@
 
 Binary to decimal converters in many languages
 
-## Current languages (27)
+## Current languages (28)
 
 - Bash
 - C
@@ -10,6 +10,7 @@ Binary to decimal converters in many languages
 - C++
 - Clojure
 - CoffeeScript
+- D
 - Dart
 - DogeScript
 - F#
