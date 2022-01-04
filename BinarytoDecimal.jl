@@ -1,10 +1,13 @@
+#!/usr/bin/env julia
 function BinarytoDecimal(binaryNumber)
 	value = string(binaryNumber)
+	len = length(value)
 	output = 0
-	for position = 1:length(value)
-		if value[position] == '1'
-			output += 2^(length(value) - position)
-		elseif value[position] == '0'
+	for position = 1:len
+		char = value[position]
+		if char == '1'
+			output += 2^(len - position)
+		elseif char == '0'
 			
 		else
 			return "Make sure you only input binary values"
