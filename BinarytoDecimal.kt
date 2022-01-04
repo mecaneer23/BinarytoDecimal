@@ -4,13 +4,15 @@ import kotlin.math.pow
 
 fun binaryDecimal(binary_number: Long): Int {
 	val value: String = binary_number.toString()
+	val len: Int = value.length
 	var output = 0
 	for (position in value.indices) {
 		if (value[position] == '1') {
-			output += 2.0.pow(value.length - 1.0 - position).toInt()
+			output += 2.0.pow(len - 1.0 - position).toInt()
 		} else if (value[position] == '0') {
-			null
+			continue
 		} else {
+			System.err.println("Make sure you only input binary values")
 			return -1
 		}
 	}
@@ -19,11 +21,5 @@ fun binaryDecimal(binary_number: Long): Int {
 
 fun main() {
 	print("Binary Number: ")
-	val num = Integer.valueOf(readLine()).toLong()
-	val result = binaryDecimal(num)
-	if (result == -1) {
-		System.err.println("Make sure you only input binary values")
-	} else {
-		println(result)
-	}
+	println(binaryDecimal(Integer.valueOf(readLine()).toLong()))
 }
