@@ -2,7 +2,7 @@
 
 Binary to decimal converters in many languages
 
-## Unix/Windows file endings error
+## File endings error
 
 Resolve by opening the file in question in vim and running the following command
 
