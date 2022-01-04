@@ -1,10 +1,11 @@
 BinaryToDecimal <- function(binaryNumber) {
 	value = toString(binaryNumber)
+	length = nchar(value)
 	output = 0
-	for (position in 1:nchar(value)) {
+	for (position in 1:length) {
 		char = substr(value, position, position)
 		if (char == "1") {
-			output = output + (2 ^ (nchar(value) - 1 - position))
+			output = output + (2 ^ (length - position))
 		} else if (char == "0") {
 			
 		} else {
@@ -12,7 +13,7 @@ BinaryToDecimal <- function(binaryNumber) {
 			return(-1)
 		}
 	}
-	return(output * 2)
+	return(output)
 }
 
 cat("Binary Number: ")
