@@ -2,7 +2,7 @@
 
 Binary to decimal converters in many languages
 
-## Current languages (28)
+## Current languages (29)
 
 - Bash
 - C
@@ -23,6 +23,7 @@ Binary to decimal converters in many languages
 - Kotlin
 - Common Lisp
 - Lua
+- Pascal
 - Perl
 - PHP
 - Powershell
