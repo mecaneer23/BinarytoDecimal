@@ -2,6 +2,14 @@
 
 Binary to decimal converters in many languages
 
+## Unix/Windows file endings error
+
+Resolve by opening the file in question in vim and running the following command
+
+```vim
+:set ff=unix
+```
+
 ## Current languages (29)
 
 - Bash

@@ -1,3 +1,4 @@
+#!/usr/bin/env Rscript
 BinaryToDecimal <- function(binaryNumber) {
 	value = toString(binaryNumber)
 	length = nchar(value)

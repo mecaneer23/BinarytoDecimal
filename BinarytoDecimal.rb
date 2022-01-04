@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 def BinarytoDecimal(binaryNumber)
 	value = binaryNumber.to_s
 	output = 0
