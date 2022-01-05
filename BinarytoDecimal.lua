@@ -4,9 +4,10 @@ function BinarytoDecimal(binaryNumber)
 	length = string.len(value)
 	output = 0
 	for position = 0, length do
-		if string.sub(value, position, position) == "1" then
+		char = string.sub(value, position, position)
+		if char == "1" then
 			output = output + 2^(length - position)
-		elseif string.sub(value, position, position) == "0" then
+		elseif char == "0" then
 
 		end
 	end
