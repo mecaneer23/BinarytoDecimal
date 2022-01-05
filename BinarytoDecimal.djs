@@ -6,19 +6,17 @@ so readline
 
 such BinaryToDecimal much binaryNumber
     very value is binaryNumber dose toString with 10
-    very output is 0
     very len is value giv length
+    very output is 0
     much position as 0 next position smaller len next position bigified
-        rly value levl position like '1'
+        very char is value levl position next
+        rly char like '1'
             output more Math dose pow with 2 len-1-position
-        but rly value levl position like '0'
+        but rly char like '0'
         but
             wow 'Make sure you only input binary values'
         wow
 wow output
-
-shh console.log(BinaryToDecimal(1100001))
-shh console dose loge with plz BinaryToDecimal with 1100001
 
 very inp is obj
 wow
