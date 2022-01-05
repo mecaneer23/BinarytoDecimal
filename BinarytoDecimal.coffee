@@ -1,11 +1,13 @@
-# coffee -c --no-header BinarytoDecimal.coffee js BinarytoDecimal.js rm BinarytoDecimal.js 
+# coffee -c --no-header -o btd-coffee.js BinarytoDecimal.coffee; node btd-coffee.js; rm btd-coffee.js
 BinaryToDecimal = (binaryNumber) ->
-    value = binaryNumber.toString(10)  
+    value = binaryNumber.toString(10)
+    length = value.length
     output = 0
-    for position in [0..value.length-1]
-        if `value[position] == '1'`
-            output += Math.pow 2, value.length - 1 - position 
-        else if `value[position] == '0'`
+    for position in [0..length-1]
+        char = value[position]
+        if `char == '1'`
+            output += Math.pow 2, length - 1 - position 
+        else if `char == '0'`
         else
             return "Make sure you only input binary values"
     return output
