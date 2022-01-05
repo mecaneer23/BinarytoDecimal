@@ -1,11 +1,13 @@
 #!/usr/bin/env ruby
 def BinarytoDecimal(binaryNumber)
 	value = binaryNumber.to_s
+	len = value.length
 	output = 0
-	for position in 0..value.length
-		if value[position] == "1"
-			output += 2**(value.length - 1 - position)
-		elsif value[position] == "0"
+	for position in 0..len
+		char = value[position]
+		if char == "1"
+			output += 2**(len - 1 - position)
+		elsif char == "0"
 			nil
 		elsif value[position].to_i.between?(2, 9)
 			return "Make sure you only input binary values"
