@@ -5,11 +5,12 @@ using namespace std;
 
 int BinaryToDecimal(long long binaryNumber) {
 	string value = to_string(binaryNumber);
+	int length = value.length();
 	long output = 0;
-	for (long position = 0; position < value.length(); ++position) {
+	for (long position = 0; position < length; ++position) {
 		char chr = value.at(position);
 		if (chr == '1') {
-			output += pow(2, value.length() - 1 - position);
+			output += pow(2, length - 1 - position);
 		} else if (chr == '0') {
 
 		} else {
