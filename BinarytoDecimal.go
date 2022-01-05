@@ -12,11 +12,12 @@ import (
 
 func BinarytoDecimal(binaryNumber string) int {
 	value := binaryNumber
+	length := len(value)
 	output := 0
-	for position := 0; position < len(value); position++ {
+	for position := 0; position < length; position++ {
 		char := string(value[position])
 		if char == "1" {
-			output += int(math.Pow(float64(2), float64(len(value)-(1+position))))
+			output += int(math.Pow(float64(2), float64(length-(1+position))))
 		} else if char == "0" {
 
 		} else {
