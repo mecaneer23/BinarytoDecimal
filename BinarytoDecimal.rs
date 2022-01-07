@@ -1,3 +1,4 @@
+// cargo run
 use std::io;
 use std::io::Write;
 
