@@ -38,7 +38,7 @@ Resolve by opening the file in question in vim and running the following command
 - PHP
 - Powershell
 - Python
-- R (Rscript)
+- R
 - Ruby
 - Rust
 - Scala
