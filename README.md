@@ -10,7 +10,7 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (31)
+## Current languages (32)
 
 - Bash
 - C
@@ -41,5 +41,6 @@ Resolve by opening the file in question in vim and running the following command
 - R (Rscript)
 - Ruby
 - Rust
+- Scala
 - Swift
 - TypeScript
