@@ -10,7 +10,7 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (35)
+## Current languages (36)
 
 - Bash
 - C
@@ -33,6 +33,7 @@ Resolve by opening the file in question in vim and running the following command
 - Kotlin
 - Common Lisp
 - Lua
+- Nim
 - Pascal
 - Perl
 - PHP
