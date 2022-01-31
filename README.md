@@ -10,7 +10,7 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (37)
+## Current languages (39)
 
 - Bash
 - C
@@ -41,6 +41,8 @@ Resolve by opening the file in question in vim and running the following command
 - Powershell
 - Python
 - R
+- Reason
+- Rescript
 - Ruby
 - Rust
 - Scala
