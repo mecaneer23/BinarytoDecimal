@@ -1,4 +1,4 @@
-/* Compile with -lm (link math) flag */
+/* gcc BinarytoDecimal.c -lm */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
