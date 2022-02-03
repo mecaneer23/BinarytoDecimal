@@ -1,5 +1,5 @@
 import strutils
-import std/math
+import math
 
 proc BinarytoDecimal(binaryNumber: int): int =
     var value: cString = intToStr(binaryNumber)
