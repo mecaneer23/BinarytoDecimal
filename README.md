@@ -35,6 +35,7 @@ Resolve by opening the file in question in vim and running the following command
 - Common Lisp
 - Lua
 - Nim
+- Objective-C
 - Pascal
 - Perl
 - PHP
