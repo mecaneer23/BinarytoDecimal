@@ -16,9 +16,9 @@ Module BinarytoDecimal
         Return output
     End Function
 
-	Public Sub Main
-		Console.Write("Binary Number: ")
+    Public Sub Main
+        Console.Write("Binary Number: ")
         Dim num = Console.ReadLine()
         Console.WriteLine(BinaryToDecimal(num))
-	End Sub
+    End Sub
 End Module
