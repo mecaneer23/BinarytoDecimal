@@ -18,7 +18,7 @@ BinarytoDecimal() {
 			exit;
 		fi;
 	done;
-        echo $output;
+		echo $output;
 }
 
 read -p "Binary Number: " input;
