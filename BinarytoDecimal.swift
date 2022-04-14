@@ -1,19 +1,15 @@
 import Foundation;
 
 func BinarytoDecimal(_ binaryNumber: Int) -> Int {
-	let value:String = String(binaryNumber);
-	let len:Int = value.count;
-	var output:Int = 0;
+	let value: String = String(binaryNumber);
+	let len: Int = value.count;
+	var output: Int = 0;
 	for position in 0...len-1 {
 		let char:Character = value[value.index(value.startIndex, offsetBy: position)];
 		if (char == "1") {
-			let decimal_two = Double(2);
-			let power_of = Double(len-1-position)
-			let temp = pow(decimal_two, power_of);
-			let result = NSDecimalNumber(value: temp);
-			output += Int(result);
+			output += Int(NSDecimalNumber(value: pow(Double(2), Double(len-1-position))));
 		} else if (char == "0") {
-			
+			continue;
 		} else {
 			print("Make sure you only input binary values");
 			exit(1);
