@@ -10,7 +10,7 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (44)
+## Current languages (45)
 
 - Bash: .sh
 - Bitsbox (JavaScript): .bitsbox.js
@@ -25,6 +25,7 @@ Resolve by opening the file in question in vim and running the following command
 - DogeScript: .djs
 - Elixir: .exs
 - F#: .fsx
+- Forth: .fth
 - Go: .go
 - Groovy: .gvy
 - Haskell: .hs
