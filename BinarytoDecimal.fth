@@ -1,4 +1,4 @@
-\ https://skilldrick.github.io/easyforth/#arrays
+\ https://skilldrick.github.io/easyforth/
 
 : take-input
     ." Binary Number: "
