@@ -1,4 +1,5 @@
 \ https://skilldrick.github.io/easyforth/
+\ gforth BinarytoDecimal.fth
 
 : take-input
     ." Binary Number: "
