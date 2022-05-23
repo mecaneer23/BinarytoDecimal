@@ -7,7 +7,7 @@
         key
         dup emit
         dup 13 = until
-        drop ;
+        drop cr ;
 
 : exp
     dup 0 = if drop drop 1 else
@@ -23,7 +23,7 @@ variable exponent
     begin
         dup 49 = if 2 exponent @ exp else
         dup 48 = if 0 else
-        ." Make sure you only input binary values "
+        ." Make sure you only input binary values " cr bye
         then then
         output +!
         1 exponent +!
@@ -34,3 +34,4 @@ variable exponent
 
 take-input
 binary-to-decimal
+cr bye
