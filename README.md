@@ -26,6 +26,7 @@ Resolve by opening the file in question in vim and running the following command
 - Elixir: .exs
 - F#: .fsx
 - Forth: .fth
+- Gadot (GDScript): .gd
 - Go: .go
 - Groovy: .gvy
 - Haskell: .hs
