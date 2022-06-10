@@ -10,7 +10,7 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (45)
+## Current languages (46)
 
 - Bash: .sh
 - Bitsbox (JavaScript): .bitsbox.js
