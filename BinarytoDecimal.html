@@ -4,12 +4,15 @@
 <head>
 	<script src="BinarytoDecimal.js"></script>
 	<title>Binary-Decimal Converter</title>
+	<link rel="stylesheet" href="BinarytoDecimal.css">
 </head>
 
 <body>
-	<input type="text" placeholder="Binary Number: " id="bn">
-	<button id="calc" onclick="setOutput()">Calculate</button>
-	<p id="output">Decimal number:</p>
+	<div class="container">
+		<input type="text" placeholder="Binary Number: " id="bn">
+		<button id="calc" onclick="setOutput()">Calculate</button>
+		<p id="output">Decimal number:</p>
+	</div>
 	<script>
 		function setOutput() {
 			document.getElementById("output").innerHTML = "Decimal number: " + BinaryToDecimal(document.getElementById("bn").value).toString(10);
