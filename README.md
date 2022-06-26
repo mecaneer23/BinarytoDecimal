@@ -59,3 +59,37 @@ Resolve by opening the file in question in vim and running the following command
 - TypeScript: .ts
 - V: .v
 - Visual Basic: .vb
+
+## Algorithm (when applicable)
+
+```pseudocode
+function BinarytoDecimal(int binaryNumber) -> int {
+    constant string value = integer_to_string(binaryNumber)
+    constant int length = length(value)
+    variable int output = 0
+    variable int position
+    for 0 to length using position {
+        variable character chr = char_from_string(value, position)
+        if chr is '1' {
+            output += 2^(length-1-position)
+        } else if chr is '0' {
+            continue loop
+        } else {
+            print("Make sure you only input binary values")
+            exit(-1)
+        }
+    }
+    return output
+}
+
+function starting_point(void) -> void {
+    print("Binary Number: ")
+    print(
+        BinarytoDecimal(
+            string_to_integer(
+                get_user_input
+            )
+        )
+    )
+}
+```
