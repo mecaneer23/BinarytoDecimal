@@ -59,6 +59,7 @@ Resolve by opening the file in question in vim and running the following command
 - TypeScript: .ts
 - V: .v
 - Visual Basic: .vb
+- Zig: .zig
 
 ## Algorithm (when applicable)
 
