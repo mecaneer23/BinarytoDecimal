@@ -7,7 +7,7 @@ func BinarytoDecimal(_ binaryNumber: Int) -> Int {
 	for position in 0...len-1 {
 		let char:Character = value[value.index(value.startIndex, offsetBy: position)];
 		if (char == "1") {
-			output += Int(NSDecimalNumber(value: pow(Double(2), Double(len-1-position))));
+			output += Int(pow(Double(2), Double(len-1-position)));
 		} else if (char == "0") {
 			continue;
 		} else {
@@ -19,5 +19,4 @@ func BinarytoDecimal(_ binaryNumber: Int) -> Int {
 }
 
 print("Binary Number: ", terminator:"");
-let input = Int(readLine()!);
-print(BinarytoDecimal(input as! Int));
+print(BinarytoDecimal(Int(readLine()!)!));
