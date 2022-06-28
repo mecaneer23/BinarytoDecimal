@@ -10,10 +10,11 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (49)
+## Current languages (50)
 
 - Ada: .adb
 - Bash: .sh
+- Batch: .bat
 - Bitsbox (JavaScript): .bitsbox.js
 - C: .c
 - C#: .cs
