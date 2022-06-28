@@ -10,8 +10,9 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (48)
+## Current languages (49)
 
+- Ada: .adb
 - Bash: .sh
 - Bitsbox (JavaScript): .bitsbox.js
 - C: .c
