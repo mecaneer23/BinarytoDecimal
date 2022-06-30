@@ -12,58 +12,58 @@ Resolve by opening the file in question in vim and running the following command
 
 ## Current languages (50)
 
-| Language              | Extension   |
-| --------------------- | ----------- |
-| Ada                   | .adb        |
-| Bash                  | .sh         |
-| Batch                 | .bat        |
-| Bitsbox (JavaScript)  | .bitsbox.js |
-| C                     | .c          |
-| C#                    | .cs         |
-| C++                   | .cpp        |
-| Clojure               | .clj        |
-| CoffeeScript          | .coffee     |
-| Crystal               | .cr         |
-| CSS                   | .css        |
-| D                     | .d          |
-| Dart                  | .dart       |
-| DogeScript            | .djs        |
-| Elixir                | .exs        |
-| F#                    | .fsx        |
-| Forth                 | .fth        |
-| Gadot (GDScript)      | .gd         |
-| Go                    | .go         |
-| Groovy                | .gvy        |
-| Haskell               | .hs         |
-| HTML (JavaScript)     | .html       |
-| Java                  | .java       |
-| JavaScript            | .js         |
-| Julia                 | .jl         |
-| Kotlin                | .kt         |
-| Common Lisp           | .lsp        |
-| Lua                   | .lua        |
-| Nim                   | .nim        |
-| Objective-C           | .m          |
-| OCaml                 | .ml         |
-| Pascal                | .pas        |
-| Perl                  | .pl         |
-| PHP                   | .php        |
-| Powershell            | .ps1        |
-| Python                | .py         |
-| R                     | .r          |
-| Reason                | .re         |
-| Rescript              | .res        |
-| Ruby                  | .rb         |
-| Rust                  | .rs         |
-| Scala                 | .scala      |
-| Scratch               | .sb3        |
-| Scheme                | .scm        |
-| Swift                 | .swift      |
-| Tcl                   | .tcl        |
-| TypeScript            | .ts         |
-| V                     | .v          |
-| Visual Basic          | .vb         |
-| Zig                   | .zig        |
+| Language                                           | Extension                                 |
+| -------------------------------------------------- | ----------------------------------------- |
+| [Ada](BinarytoDecimal.adb)                         | [.adb](BinarytoDecimal.adb)               |
+| [Bash](BinarytoDecimal.sh)                         | [.sh](BinarytoDecimal.sh)                 |
+| [Batch](BinarytoDecimal.bat)                       | [.bat](BinarytoDecimal.bat)               |
+| [Bitsbox (JavaScript)](BinarytoDecimal.bitsbox.js) | [.bitsbox.js](BinarytoDecimal.bitsbox.js) |
+| [C](BinarytoDecimal.c)                             | [.c](BinarytoDecimal.c)                   |
+| [C#](BinarytoDecimal.cs)                           | [.cs](BinarytoDecimal.cs)                 |
+| [C++](BinarytoDecimal.cpp)                         | [.cpp](BinarytoDecimal.cpp)               |
+| [Clojure](BinarytoDecimal.clj)                     | [.clj](BinarytoDecimal.clj)               |
+| [CoffeeScript](BinarytoDecimal.coffee)             | [.coffee](BinarytoDecimal.coffee)         |
+| [Crystal](BinarytoDecimal.cr)                      | [.cr](BinarytoDecimal.cr)                 |
+| [CSS](BinarytoDecimal.css)                         | [.css](BinarytoDecimal.css)               |
+| [D](BinarytoDecimal.d)                             | [.d](BinarytoDecimal.d)                   |
+| [Dart](BinarytoDecimal.dart)                       | [.dart](BinarytoDecimal.dart)             |
+| [DogeScript](BinarytoDecimal.djs)                  | [.djs](BinarytoDecimal.djs)               |
+| [Elixir](BinarytoDecimal.exs)                      | [.exs](BinarytoDecimal.exs)               |
+| [F#](BinarytoDecimal.fsx)                          | [.fsx](BinarytoDecimal.fsx)               |
+| [Forth](BinarytoDecimal.fth)                       | [.fth](BinarytoDecimal.fth)               |
+| [Gadot (GDScript)](BinarytoDecimal.gd)             | [.gd](BinarytoDecimal.gd)                 |
+| [Go](BinarytoDecimal.go)                           | [.go](BinarytoDecimal.go)                 |
+| [Groovy](BinarytoDecimal.gvy)                      | [.gvy](BinarytoDecimal.gvy)               |
+| [Haskell](BinarytoDecimal.hs)                      | [.hs](BinarytoDecimal.hs)                 |
+| [HTML (JavaScript)](BinarytoDecimal.html)          | [.html](BinarytoDecimal.html)             |
+| [Java](BinarytoDecimal.java)                       | [.java](BinarytoDecimal.java)             |
+| [JavaScript](BinarytoDecimal.js)                   | [.js](BinarytoDecimal.js)                 |
+| [Julia](BinarytoDecimal.jl)                        | [.jl](BinarytoDecimal.jl)                 |
+| [Kotlin](BinarytoDecimal.kt)                       | [.kt](BinarytoDecimal.kt)                 |
+| [Common Lisp](BinarytoDecimal.lsp)                 | [.lsp](BinarytoDecimal.lsp)               |
+| [Lua](BinarytoDecimal.lua)                         | [.lua](BinarytoDecimal.lua)               |
+| [Nim](BinarytoDecimal.nim)                         | [.nim](BinarytoDecimal.nim)               |
+| [Objective-C](BinarytoDecimal.m)                   | [.m](BinarytoDecimal.m)                   |
+| [OCaml](BinarytoDecimal.ml)                        | [.ml](BinarytoDecimal.ml)                 |
+| [Pascal](BinarytoDecimal.pas)                      | [.pas](BinarytoDecimal.pas)               |
+| [Perl](BinarytoDecimal.pl)                         | [.pl](BinarytoDecimal.pl)                 |
+| [PHP](BinarytoDecimal.php)                         | [.php](BinarytoDecimal.php)               |
+| [Powershell](BinarytoDecimal.ps1)                  | [.ps1](BinarytoDecimal.ps1)               |
+| [Python](BinarytoDecimal.py)                       | [.py](BinarytoDecimal.py)                 |
+| [R](BinarytoDecimal.r)                             | [.r](BinarytoDecimal.r)                   |
+| [Reason](BinarytoDecimal.re)                       | [.re](BinarytoDecimal.re)                 |
+| [Rescript](BinarytoDecimal.res)                    | [.res](BinarytoDecimal.res)               |
+| [Ruby](BinarytoDecimal.rb)                         | [.rb](BinarytoDecimal.rb)                 |
+| [Rust](BinarytoDecimal.rs)                         | [.rs](BinarytoDecimal.rs)                 |
+| [Scala](BinarytoDecimal.scala)                     | [.scala](BinarytoDecimal.scala)           |
+| [Scratch](BinarytoDecimal.sb3)                     | [.sb3](BinarytoDecimal.sb3)               |
+| [Scheme](BinarytoDecimal.scm)                      | [.scm](BinarytoDecimal.scm)               |
+| [Swift](BinarytoDecimal.swift)                     | [.swift](BinarytoDecimal.swift)           |
+| [Tcl](BinarytoDecimal.tcl)                         | [.tcl](BinarytoDecimal.tcl)               |
+| [TypeScript](BinarytoDecimal.ts)                   | [.ts](BinarytoDecimal.ts)                 |
+| [V](BinarytoDecimal.v)                             | [.v](BinarytoDecimal.v)                   |
+| [Visual Basic](BinarytoDecimal.vb)                 | [.vb](BinarytoDecimal.vb)                 |
+| [Zig](BinarytoDecimal.zig)                         | [.zig](BinarytoDecimal.zig)               |
 
 ## Algorithm (when applicable)
 
