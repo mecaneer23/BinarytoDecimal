@@ -70,6 +70,7 @@ Resolve by opening the file in question in vim and running the following command
 | [CSS](BinarytoDecimal.css)                        | HTML            |
 | [HTML](BinarytoDecimal.html)                      | JavaScript      |
 | [Haskell Style](BinarytoDecimal.haskell_style.py) | Python          |
+| [Tkinter](BinarytoDecimal.tkinter.py)             | Python          |
 
 ## Algorithm (when applicable)
 
