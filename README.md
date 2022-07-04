@@ -62,14 +62,6 @@ Resolve by opening the file in question in vim and running the following command
 | [Visual Basic](BinarytoDecimal.vb)     |
 | [Zig](BinarytoDecimal.zig)             |
 
-<style>
-#user-content-current-languages-47 {
-    list-style-type: none;
-    column-count: 3;
-    column-gap: 20px;
-}
-</style>
-
 ## Libraries and tools using BinarytoDecimal in existing languages
 
 | Library or tool                                   | Parent language |
