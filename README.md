@@ -20,7 +20,6 @@ Resolve by opening the file in question in vim and running the following command
 | [C](BinarytoDecimal.c)       | [Crystal](BinarytoDecimal.cr)          | [F#](BinarytoDecimal.fsx)         | [Haskell](BinarytoDecimal.hs)          | [Common Lisp](BinarytoDecimal.lsp) | [Pascal](BinarytoDecimal.pas)    | [R](BinarytoDecimal.r)            | [Scala](BinarytoDecimal.scala)  | [TypeScript](BinarytoDecimal.ts) |
 | [C#](BinarytoDecimal.cs)     | [D](BinarytoDecimal.d)                 | [Forth](BinarytoDecimal.fth)      | [Java](BinarytoDecimal.java)           | [Lua](BinarytoDecimal.lua)         | [Perl](BinarytoDecimal.pl)       | [Reason](BinarytoDecimal.re)      | [Scratch](BinarytoDecimal.sb3)  | [V](BinarytoDecimal.v)           |
 
-
 ## Libraries and tools using BinarytoDecimal in existing languages
 
 | Library or tool                                   | Parent language |
