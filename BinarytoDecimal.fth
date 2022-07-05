@@ -15,23 +15,18 @@
         over swap 1 do over * loop
         swap drop then then ;
 
-variable output
-variable exponent
 : binary-to-decimal
-    0 output !
-    0 exponent !
+    0 0 rot
     begin
-        dup 49 = if 2 exponent @ exp else
-        dup 48 = if 0 else
+        dup 49 = if drop 2 over exp else
+        48 = if 0 else
         ." Make sure you only input binary values " cr bye
         then then
-        output +!
-        1 exponent +!
-        drop
+        rot + swap 1 +
+        rot
         dup 0 = until
-        drop
-        output ? ;
+        drop drop ;
 
 take-input
-binary-to-decimal
+binary-to-decimal .
 cr bye
