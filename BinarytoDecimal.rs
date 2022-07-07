@@ -21,11 +21,15 @@ fn binary_to_decimal(binary_number: i32) -> u32 {
 	return output;
 }
 
-fn main() {
-	print!("Binary Number: ");
+fn input(query_string: &str) -> i32 {
+	print!("{}", query_string);
 	io::stdout().flush().unwrap();
 	let mut input = String::new();
-	io::stdin().read_line(&mut input).expect("ERROR");
-	let num: i32 = input.trim().parse::<i32>().unwrap();
-	println!("{}", binary_to_decimal(num));
+	io::stdin().read_line(&mut input).unwrap();
+	let input: i32 = input.trim().parse().unwrap();
+	return input;
+}
+
+fn main() {
+	println!("{}", binary_to_decimal(input("Binary Number: ")));
 }
