@@ -23,8 +23,8 @@ Resolve by opening the file in question in vim and running the following command
 
 ## Libraries and tools using BinarytoDecimal in existing languages
 
-| Library or tool                                   | Parent language |
-| ------------------------------------------------- | --------------- |
+| Library or tool                                   | Parent language                  |
+| ------------------------------------------------- | -------------------------------- |
 | [Bitsbox](BinarytoDecimal.bitsbox.js)             | [JavaScript](BinarytoDecimal.js) |
 | [CSS](BinarytoDecimal.css)                        | [HTML](BinarytoDecimal.html)     |
 | [HTML](BinarytoDecimal.html)                      | [JavaScript](BinarytoDecimal.js) |
