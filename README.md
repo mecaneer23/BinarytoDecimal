@@ -25,11 +25,11 @@ Resolve by opening the file in question in vim and running the following command
 
 | Library or tool                                   | Parent language |
 | ------------------------------------------------- | --------------- |
-| [Bitsbox](BinarytoDecimal.bitsbox.js)             | JavaScript      |
-| [CSS](BinarytoDecimal.css)                        | HTML            |
-| [HTML](BinarytoDecimal.html)                      | JavaScript      |
-| [Haskell Style](BinarytoDecimal.haskell_style.py) | Python          |
-| [Tkinter](BinarytoDecimal.tkinter.py)             | Python          |
+| [Bitsbox](BinarytoDecimal.bitsbox.js)             | [JavaScript](BinarytoDecimal.js) |
+| [CSS](BinarytoDecimal.css)                        | [HTML](BinarytoDecimal.html)     |
+| [HTML](BinarytoDecimal.html)                      | [JavaScript](BinarytoDecimal.js) |
+| [Haskell Style](BinarytoDecimal.haskell_style.py) | [Python](BinarytoDecimal.py)     |
+| [Tkinter](BinarytoDecimal.tkinter.py)             | [Python](BinarytoDecimal.py)     |
 
 ## Algorithm (when applicable)
 
