@@ -19,6 +19,5 @@ sub BinarytoDecimal() {
 }
 
 print("Binary Number: ");
-$num = int(<>);
-$out = &BinarytoDecimal($num);
+$out = &BinarytoDecimal(int(<>));
 print("$out\n");
