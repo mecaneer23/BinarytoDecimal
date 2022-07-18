@@ -19,5 +19,4 @@ let binary_to_decimal binary_number =
 ;;
 
 print_string "Binary Number: ";;
-let input = read_line ();;
-print_endline (string_of_int (binary_to_decimal (int_of_string input)))
+print_endline (string_of_int (binary_to_decimal (int_of_string (read_line ()))))
