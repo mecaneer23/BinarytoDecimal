@@ -25,7 +25,6 @@ int main() {
     string input;
     cout << "Binary Number: ";
     getline(cin, input);
-    long long int num = stoll(input);
-    cout << BinaryToDecimal(num) << endl;
+    cout << BinaryToDecimal(stoll(input)) << endl;
     return 0;
 }
