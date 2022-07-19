@@ -16,9 +16,10 @@ int BinarytoDecimal(int binaryNumber) {
         if (chr == '1') {
             output += pow(2, len - 1 - position);
         } else if (chr == '0') {
-
+	    continue;
         } else {
-            return -1;
+            printf("%s\n", "Make sure you only input binary values");
+	    exit(-1);
         }
     }
     return output;
@@ -28,10 +29,5 @@ int main(void) {
     int num;
     printf("%s", "Binary Number: ");
     scanf("%d", &num);
-    int result = BinarytoDecimal(num);
-    if (result == -1) {
-        printf("%s\n", "Make sure you only input binary values");
-    } else {
-        printf("%d\n", result);
-    }
+    printf("%d\n", BinarytoDecimal(num));
 }
