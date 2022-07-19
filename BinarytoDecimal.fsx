@@ -15,6 +15,4 @@ module BinarytoDecimal =
         output
 
     printf "Binary Number: "
-    let input = System.Console.ReadLine()
-    let output = BinaryDecimal(input)
-    printfn "%d" output
+    printfn "%d" (BinaryDecimal(System.Console.ReadLine()))
