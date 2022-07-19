@@ -8,7 +8,7 @@ function BinarytoDecimal(binaryNumber)
         if char == '1'
             output += 2^(len - position)
         elseif char == '0'
-
+	    continue
         else
             return "Make sure you only input binary values"
         end
@@ -17,9 +17,4 @@ function BinarytoDecimal(binaryNumber)
 end
 
 print("Binary Number: ")
-input = readline()
-if input == ""
-    println("0")
-else
-    println(BinarytoDecimal(parse(Int64, input)))
-end
+println(BinarytoDecimal(parse(Int64, readline())))
