@@ -19,5 +19,4 @@ def binary_to_decimal(binaryNumber)
 end
 
 print "Binary Number: "
-num = gets
-puts binary_to_decimal(num)
+puts binary_to_decimal(gets())
