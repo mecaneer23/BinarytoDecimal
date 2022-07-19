@@ -8,12 +8,11 @@ function BinarytoDecimal(binaryNumber)
 		if char == "1" then
 			output = output + 2^(length - position)
 		elseif char == "0" then
-
+			
 		end
 	end
 	return math.floor(output)
 end
 
 io.write("Binary Number: ")
-num = io.read()
-print(BinarytoDecimal(num))
+print(BinarytoDecimal(io.read()))
