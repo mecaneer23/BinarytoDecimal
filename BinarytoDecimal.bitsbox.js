@@ -7,7 +7,7 @@ function BinaryToDecimal(binaryNumber) {
 		if (char == '1') {
 			output += Math.pow(2, length - 1 - position);
 		} else if (char == '0') {
-			continue
+			continue;
 		} else {
 			return "Make sure you only input binary values";
 		}
