@@ -6,6 +6,7 @@ import std.stdio;
 import std.conv;
 import std.string;
 import std.math;
+import core.stdc.stdlib;
 
 int BinarytoDecimal(int binaryNumber) {
     string value = to!string(binaryNumber);
@@ -19,7 +20,7 @@ int BinarytoDecimal(int binaryNumber) {
             continue;
         } else {
             writeln("Make sure you only input binary values");
-            return 0;
+            exit(-1);
         }
     }
     return output;
@@ -27,7 +28,5 @@ int BinarytoDecimal(int binaryNumber) {
 
 void main() {
     writef("Binary Number: ");
-    string input = strip(readln());
-    int num = to!int(input);
-    writef("%d\n", BinarytoDecimal(num));
+    writef("%d\n", BinarytoDecimal(to!int(strip(readln()))));
 }
