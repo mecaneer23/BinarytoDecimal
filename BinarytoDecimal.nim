@@ -1,3 +1,4 @@
+# nim compile --run BinarytoDecimal.nim
 import strutils
 import math
 
@@ -19,5 +20,4 @@ proc BinarytoDecimal(binaryNumber: int): int =
     return output
 
 write(stdout, "Binary Number: ")
-var input = parseInt(readLine(stdin))
-echo BinarytoDecimal(input)
+echo BinarytoDecimal(parseInt(readLine(stdin)))
