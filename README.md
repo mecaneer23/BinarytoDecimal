@@ -19,8 +19,8 @@ Resolve by opening the file in question in vim and running the following command
 | [Batch](BinarytoDecimal.bat)   | [Crystal](BinarytoDecimal.cr)          | [Fortran](BinarytoDecimal.f90)         | [Julia](BinarytoDecimal.jl)      | [Perl](BinarytoDecimal.pl)        | [Ruby](BinarytoDecimal.rb)      | [TypeScript](BinarytoDecimal.ts)   |
 | [C](BinarytoDecimal.c)         | [D](BinarytoDecimal.d)                 | [Gadot (GDScript)](BinarytoDecimal.gd) | [Kotlin](BinarytoDecimal.kt)     | [PHP](BinarytoDecimal.php)        | [Rust](BinarytoDecimal.rs)      | [V](BinarytoDecimal.v)             |
 | [C#](BinarytoDecimal.cs)       | [Dart](BinarytoDecimal.dart)           | [Go](BinarytoDecimal.go)               | [Lua](BinarytoDecimal.lua)       | [Powershell](BinarytoDecimal.ps1) | [Scala](BinarytoDecimal.scala)  | [Vala](BinarytoDecimal.vala)       |
-| [C++](BinarytoDecimal.cpp)     | [DogeScript](BinarytoDecimal.djs)      | [Groovy](BinarytoDecimal.gvy)          | [Nim](BinarytoDecimal.nim)       | [Python](BinarytoDecimal.py)      | [Scheme](BinarytoDecimal.scm    | [Visual Basic](BinarytoDecimal.vb) |
-| [Clojure](BinarytoDecimal.clj) | [Elixir](BinarytoDecimal.exs)          | [Haskell](BinarytoDecimal.hs)          | [Objective-C](BinarytoDecimal.m  | [R](BinarytoDecimal.r)            | [Scratch](BinarytoDecimal.sb3   | [Zig](BinarytoDecimal.zig)         |
+| [C++](BinarytoDecimal.cpp)     | [DogeScript](BinarytoDecimal.djs)      | [Groovy](BinarytoDecimal.gvy)          | [Nim](BinarytoDecimal.nim)       | [Python](BinarytoDecimal.py)      | [Scheme](BinarytoDecimal.scm)   | [Visual Basic](BinarytoDecimal.vb) |
+| [Clojure](BinarytoDecimal.clj) | [Elixir](BinarytoDecimal.exs)          | [Haskell](BinarytoDecimal.hs)          | [Objective-C](BinarytoDecimal.m) | [R](BinarytoDecimal.r)            | [Scratch](BinarytoDecimal.sb3)  | [Zig](BinarytoDecimal.zig)         |
 
 ## Libraries and tools using BinarytoDecimal in existing languages
 
