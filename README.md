@@ -10,20 +10,18 @@ Resolve by opening the file in question in vim and running the following command
 :set ff=unix
 ```
 
-## Current languages (50)
+## Current languages (51)
 
-| Language                               |                                        |                                  |                                   |                                    |
-| -------------------------------------- | -------------------------------------- | -------------------------------- | --------------------------------- | ---------------------------------- |
-| [Ada](BinarytoDecimal.adb)             | [D](BinarytoDecimal.d)                 | [Haskell](BinarytoDecimal.hs)    | [Perl](BinarytoDecimal.pl)        | [Scheme](BinarytoDecimal.scm)      |
-| [Bash](BinarytoDecimal.sh)             | [Dart](BinarytoDecimal.dart)           | [Java](BinarytoDecimal.java)     | [PHP](BinarytoDecimal.php)        | [Scratch](BinarytoDecimal.sb3)     |
-| [Batch](BinarytoDecimal.bat)           | [DogeScript](BinarytoDecimal.djs)      | [JavaScript](BinarytoDecimal.js) | [Powershell](BinarytoDecimal.ps1) | [Swift](BinarytoDecimal.swift)     |
-| [C](BinarytoDecimal.c)                 | [Elixir](BinarytoDecimal.exs)          | [Julia](BinarytoDecimal.jl)      | [Python](BinarytoDecimal.py)      | [Tcl](BinarytoDecimal.tcl)         |
-| [C#](BinarytoDecimal.cs)               | [F#](BinarytoDecimal.fsx)              | [Kotlin](BinarytoDecimal.kt)     | [R](BinarytoDecimal.r)            | [TypeScript](BinarytoDecimal.ts)   |
-| [C++](BinarytoDecimal.cpp)             | [Forth](BinarytoDecimal.fth)           | [Lua](BinarytoDecimal.lua)       | [Reason](BinarytoDecimal.re)      | [V](BinarytoDecimal.v)             |
-| [Clojure](BinarytoDecimal.clj)         | [Fortran](BinarytoDecimal.f90)         | [Nim](BinarytoDecimal.nim)       | [Rescript](BinarytoDecimal.res)   | [Vala](BinarytoDecimal.vala)       |
-| [CoffeeScript](BinarytoDecimal.coffee) | [Gadot (GDScript)](BinarytoDecimal.gd) | [Objective-C](BinarytoDecimal.m) | [Ruby](BinarytoDecimal.rb)        | [Visual Basic](BinarytoDecimal.vb) |
-| [Common Lisp](BinarytoDecimal.lsp)     | [Go](BinarytoDecimal.go)               | [OCaml](BinarytoDecimal.ml)      | [Rust](BinarytoDecimal.rs)        | [Vimscript](BinarytoDecimal.vim)   |
-| [Crystal](BinarytoDecimal.cr)          | [Groovy](BinarytoDecimal.gvy)          | [Pascal](BinarytoDecimal.pas)    | [Scala](BinarytoDecimal.scala)    | [Zig](BinarytoDecimal.zig)         |
+| Language                               |                                    |                                        |                                  |                                   |                                  |                                    |
+| -------------------------------------- | ---------------------------------- | -------------------------------------- | -------------------------------- | --------------------------------- | -------------------------------- | ---------------------------------- |
+| [Ada](BinarytoDecimal.adb)             | [Common Lisp](BinarytoDecimal.lsp) | [Fortran](BinarytoDecimal.f90)         | [Kotlin](BinarytoDecimal.kt)     | [Powershell](BinarytoDecimal.ps1) | [Scala](BinarytoDecimal.scala)   | [Visual Basic](BinarytoDecimal.vb) |
+| [Bash](BinarytoDecimal.sh)             | [Crystal](BinarytoDecimal.cr)      | [Gadot (GDScript)](BinarytoDecimal.gd) | [Lua](BinarytoDecimal.lua)       | [Python](BinarytoDecimal.py)      | [Scheme](BinarytoDecimal.scm)    | [Vimscript](BinarytoDecimal.vim)   |
+| [Batch](BinarytoDecimal.bat)           | [D](BinarytoDecimal.d)             | [Go](BinarytoDecimal.go)               | [Nim](BinarytoDecimal.nim)       | [R](BinarytoDecimal.r)            | [Scratch](BinarytoDecimal.sb3)   | [Zig](BinarytoDecimal.zig)         |
+| [C](BinarytoDecimal.c)                 | [Dart](BinarytoDecimal.dart)       | [Groovy](BinarytoDecimal.gvy)          | [Objective-C](BinarytoDecimal.m) | [Racket](BinarytoDecimal.rkt)     | [Swift](BinarytoDecimal.swift)   |
+| [C#](BinarytoDecimal.cs)               | [DogeScript](BinarytoDecimal.djs)  | [Haskell](BinarytoDecimal.hs)          | [OCaml](BinarytoDecimal.ml)      | [Reason](BinarytoDecimal.re)      | [Tcl](BinarytoDecimal.tcl)       |
+| [C++](BinarytoDecimal.cpp)             | [Elixir](BinarytoDecimal.exs)      | [Java](BinarytoDecimal.java)           | [Pascal](BinarytoDecimal.pas)    | [Rescript](BinarytoDecimal.res)   | [TypeScript](BinarytoDecimal.ts) |
+| [Clojure](BinarytoDecimal.clj)         | [F#](BinarytoDecimal.fsx)          | [JavaScript](BinarytoDecimal.js)       | [Perl](BinarytoDecimal.pl)       | [Ruby](BinarytoDecimal.rb)        | [V](BinarytoDecimal.v)           |
+| [CoffeeScript](BinarytoDecimal.coffee) | [Forth](BinarytoDecimal.fth)       | [Julia](BinarytoDecimal.jl)            | [PHP](BinarytoDecimal.php)       | [Rust](BinarytoDecimal.rs)        | [Vala](BinarytoDecimal.vala)     |
 
 ## Libraries and tools using BinarytoDecimal in existing languages
 
