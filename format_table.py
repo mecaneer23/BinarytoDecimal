@@ -56,11 +56,7 @@ table_items = {
 
 
 def generate_table(pairs, row_count, alphabetize=True):
-    table = (
-        dict(sorted(pairs.items()))
-        if alphabetize
-        else pairs
-    )
+    table = dict(sorted(pairs.items())) if alphabetize else pairs
     rows = ["|" for _ in range(row_count)]
     for (i, k), v in zip(enumerate(table), table.values()):
         for j in range(row_count):
@@ -69,12 +65,30 @@ def generate_table(pairs, row_count, alphabetize=True):
     return rows, rows[0].count("|") - 1
 
 
+def pad_string(array):
+    maxlen = len(max(array, key=len))
+    return [i.ljust(maxlen) for i in array], maxlen
+
+
+def table_to_string(rows: list[str], cols: int):
+    # split each row into items
+    row_list = [row[1:].split("|") for row in rows]
+    col_list = []
+    for c in range(cols):
+        for item in row_list:
+            print(item)
+            col_list.append(item[c])
+    print(col_list)
+
+    f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(rows)
+
+
 if __name__ == "__main__":
     with open("copy_readme.md", "w") as f:
         rows, cols = generate_table(
             table_items, len(table_items) // int(input("Complete columns: "))
         )
-        f.write(f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(rows))
+        f.write(table_to_string(rows, cols))
 
 print(f"{len(table_items)} files")
 
