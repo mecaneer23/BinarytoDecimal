@@ -71,3 +71,8 @@ with open("copy_readme.md", "w") as f:
     f.write(f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(rows))
 
 print(f"{len(table_items)} files")
+
+
+# TODO:
+# alphabetize automatically
+# add spacing automatically (eliminates necessity for external markdown formatter)
