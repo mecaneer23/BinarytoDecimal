@@ -55,7 +55,8 @@ table_items = {
 }
 
 
-def generate_table(table, row_count):
+def generate_table(pairs, row_count, alphabetize=True):
+    table = sorted(pairs) if alphabetize else pairs
     rows = ["|" for _ in range(row_count)]
     for (i, k), v in zip(enumerate(table), table.values()):
         for j in range(row_count):
@@ -74,5 +75,4 @@ print(f"{len(table_items)} files")
 
 
 # TODO:
-# alphabetize automatically
 # add spacing automatically (eliminates necessity for external markdown formatter)
