@@ -56,7 +56,7 @@ table_items = {
 
 
 def generate_table(pairs, row_count, alphabetize=True):
-    table = sorted(pairs) if alphabetize else pairs
+    table = dict(zip(sorted(table_items), sorted(table_items.values()))) if alphabetize else pairs
     rows = ["|" for _ in range(row_count)]
     for (i, k), v in zip(enumerate(table), table.values()):
         for j in range(row_count):
@@ -65,11 +65,12 @@ def generate_table(pairs, row_count, alphabetize=True):
     return rows, rows[0].count("|") - 1
 
 
-with open("copy_readme.md", "w") as f:
-    rows, cols = generate_table(
-        table_items, len(table_items) // int(input("Complete columns: "))
-    )
-    f.write(f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(rows))
+if __name__ == "__main__":
+    with open("copy_readme.md", "w") as f:
+        rows, cols = generate_table(
+	    table_items, len(table_items) // int(input("Complete columns: "))
+        )
+        f.write(f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(rows))
 
 print(f"{len(table_items)} files")
 
