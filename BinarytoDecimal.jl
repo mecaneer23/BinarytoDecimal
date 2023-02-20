@@ -8,7 +8,7 @@ function BinarytoDecimal(binaryNumber)
         if char == '1'
             output += 2^(len - position)
         elseif char == '0'
-	    continue
+        continue
         else
             return "Make sure you only input binary values"
         end
