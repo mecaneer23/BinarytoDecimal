@@ -53,7 +53,7 @@ table_items = {
     "Vimscript": ".vim",
     "Zig": ".zig",
 }
-cols, rows = 7, 8
+
 
 def generate_table(table, row_count):
     rows = ["|" for _ in range(row_count)]
@@ -61,10 +61,13 @@ def generate_table(table, row_count):
         for j in range(row_count):
             if i % row_count == j:
                 rows[j] += f" [{k}](BinarytoDecimal{v}) |"
-    return rows
+    return rows, rows[0].count("|") - 1
 
 
 with open("copy_readme.md", "w") as f:
-    f.write(f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(generate_table(table_items, rows)))
+    rows, cols = generate_table(
+        table_items, len(table_items) // int(input("Complete columns: "))
+    )
+    f.write(f"| Language{' |'*cols}\n|{' - |'*cols}\n" + "\n".join(rows))
 
 print(f"{len(table_items)} files")
