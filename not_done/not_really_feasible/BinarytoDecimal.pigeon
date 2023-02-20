@@ -1,0 +1,19 @@
+// func binaryToDecimal binaryNumber
+//     locals value length output position char
+//     as value binaryNumber
+//     as length (len value)
+//     as output 0
+//     forinc position 0 length
+//         as char (get value position)
+//         if (eq char "1")
+//             as output (add output (pow 2 (sub length 1 position))
+//         else if (eq char "0")
+//             as output (add output 0)
+//         else
+//             return "Make sure you only input binary values"
+//     return output
+//
+// func main
+//     (println (binaryToDecimal (prompt "Binary Number: ")))
+func main
+    (println "Hello world")
