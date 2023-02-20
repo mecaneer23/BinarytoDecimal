@@ -57,7 +57,7 @@ table_items = {
 
 def generate_table(pairs, row_count, alphabetize=True):
     table = (
-        dict(zip(sorted(table_items), sorted(table_items.values())))
+        dict(sorted(pairs.items()))
         if alphabetize
         else pairs
     )
