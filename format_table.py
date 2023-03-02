@@ -23,6 +23,7 @@ table_items = {
     "Groovy": ".gvy",
     "Haskell": ".hs",
     "Java": ".java",
+    "Java Blocks": ".blk",
     "JavaScript": ".js",
     "Julia": ".jl",
     "Kotlin": ".kt",
@@ -66,7 +67,12 @@ def get_column_lengths(table, cols):
 
 
 def generate_table(pairs, row_count, column_lengths, alphabetize=True):
-    table = dict(sorted(pairs.items())) if alphabetize else pairs
+    if not alphabetize:
+        table = pairs
+    else:
+        table = dict(sorted(pairs.items()))
+        if table != pairs:
+            print("WARNING: table is not sorted")
     rows = ["|" for _ in range(row_count)]
     current_column = -1
     for (i, k), v in zip(enumerate(table), table.values()):
@@ -94,7 +100,12 @@ def table_to_string(rows: list[str], cols: int, column_lengths):
     return output + "\n" + "\n".join(rows)
 
 
+def get_factors(number):
+    return [i for i in range(1, number + 1) if number % i == 0]
+
+
 if __name__ == "__main__":
+    print(f"{len(table_items)} files: {get_factors(len(table_items))}")
     with open("copy_readme.md", "w") as f:
         row_count = len(table_items) // int(input("Complete columns: "))
         column_lengths = get_column_lengths(
@@ -102,5 +113,4 @@ if __name__ == "__main__":
         )
         rows, cols = generate_table(table_items, row_count, column_lengths)
         f.write(table_to_string(rows, cols, column_lengths))
-
-print(f"{len(table_items)} files")
+        print("Output written to `copy_readme.md`")
