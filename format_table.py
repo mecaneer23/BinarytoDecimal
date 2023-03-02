@@ -29,11 +29,11 @@ table_items = {
     "Kotlin": ".kt",
     "Lua": ".lua",
     "Nim": ".nim",
-    "Objective-C": ".m",
     "OCaml": ".ml",
+    "Objective-C": ".m",
+    "PHP": ".php",
     "Pascal": ".pas",
     "Perl": ".pl",
-    "PHP": ".php",
     "Powershell": ".ps1",
     "Python": ".py",
     "R": ".r",
@@ -50,8 +50,8 @@ table_items = {
     "TypeScript": ".ts",
     "V": ".v",
     "Vala": ".vala",
-    "Visual Basic": ".vb",
     "Vimscript": ".vim",
+    "Visual Basic": ".vb",
     "Zig": ".zig",
 }
 
@@ -66,13 +66,10 @@ def get_column_lengths(table, cols):
     return [len(max(i, key=len)) for i in chunk(table, cols)]
 
 
-def generate_table(pairs, row_count, column_lengths, alphabetize=True):
-    if not alphabetize:
-        table = pairs
-    else:
-        table = dict(sorted(pairs.items()))
-        if table != pairs:
-            print("WARNING: table is not sorted")
+def generate_table(pairs, row_count, column_lengths):
+    table = dict(sorted(pairs.items()))
+    if any([a != b for a, b in zip(pairs.items(), table.items())]):
+        print("WARNING: table is not sorted")
     rows = ["|" for _ in range(row_count)]
     current_column = -1
     for (i, k), v in zip(enumerate(table), table.values()):
@@ -90,8 +87,9 @@ def generate_table(pairs, row_count, column_lengths, alphabetize=True):
 
 
 def table_to_string(rows: list[str], cols: int, column_lengths):
-    output = "| Language" + " " * 31 + "|"
+    print(column_lengths)
     assert cols == len(column_lengths), f"{column_lengths =}, {cols =}"
+    output = "| Language" + " " * (column_lengths[0] + 12) + "|"
     for i in range(cols - 1):
         output += " " * (column_lengths[i + 1] + 21) + "|"
     output += "\n|"
@@ -106,11 +104,11 @@ def get_factors(number):
 
 if __name__ == "__main__":
     print(f"{len(table_items)} files: {get_factors(len(table_items))}")
+    row_count = len(table_items) // int(input("Complete columns: "))
+    column_lengths = get_column_lengths(
+        ["".join((k, v)) for k, v in table_items.items()], row_count
+    )
+    rows, cols = generate_table(table_items, row_count, column_lengths)
     with open("copy_readme.md", "w") as f:
-        row_count = len(table_items) // int(input("Complete columns: "))
-        column_lengths = get_column_lengths(
-            ["".join((k, v)) for k, v in table_items.items()], row_count
-        )
-        rows, cols = generate_table(table_items, row_count, column_lengths)
         f.write(table_to_string(rows, cols, column_lengths))
-        print("Output written to `copy_readme.md`")
+    print("Output written to `copy_readme.md`")
