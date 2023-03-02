@@ -18,3 +18,5 @@ function BinarytoDecimal(binaryNumber)
     endwhile
     return output
 endfunction
+
+" echo BinarytoDecimal()
