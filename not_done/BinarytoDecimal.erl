@@ -3,16 +3,25 @@
 
 -module('BinarytoDecimal').
 -import(math,[pow/2]).
--export([if_check/3, binarytoDecimal/1, start/0]).
+-import(lists,[nth/2]).
+-export([if_check/3, loop/2, binarytoDecimal/1, start/0]).
 
 start() ->
-   io:fwrite("Hello, world!\n").
+   {ok, Term} = io:read("Binary Number: "),
+   io:print(Term),
+   io:format("~p~n", binarytoDecimal(Term)).
 
-if_check("0", len, pos) -> 0.
-if_check("1", len, pos) -> pow(2, len - pos - 1);
-if_check(char, len, pos) -> "Make sure you only input binary values";
+if_check("0", Len, pos) -> 0;
+if_check("1", Len, pos) -> pow(2, (Len - 1) - pos);
+if_check(char, Len, pos) -> "Make sure you only input binary values".
 
-% while()
+loop(Value, Pos) ->
+   Len = length(Value),
+   if_check(nth(Pos, Value), Len, Pos),
+   if
+      Pos /= Len ->
+         loop(Value, Pos+1)
+   end.
 
 binarytoDecimal(binaryNumber) ->
-    value = integer_to_list(binaryNumber).
+   loop(binaryNumber, 0).
