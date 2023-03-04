@@ -87,7 +87,6 @@ def generate_table(pairs, row_count, column_lengths):
 
 
 def table_to_string(rows: list[str], cols: int, column_lengths):
-    print(column_lengths)
     assert cols == len(column_lengths), f"{column_lengths =}, {cols =}"
     output = "| Language" + " " * (column_lengths[0] + 12) + "|"
     for i in range(cols - 1):
@@ -103,7 +102,7 @@ def get_factors(number):
 
 
 if __name__ == "__main__":
-    print(f"{len(table_items)} files: {get_factors(len(table_items))}")
+    print(f"{len(table_items)} files, divisible by: {get_factors(len(table_items))}")
     row_count = len(table_items) // int(input("Complete columns: "))
     column_lengths = get_column_lengths(
         ["".join((k, v)) for k, v in table_items.items()], row_count
