@@ -29,11 +29,11 @@ table_items = {
     "Kotlin": ".kt",
     "Lua": ".lua",
     "Nim": ".nim",
-    "OCaml": ".ml",
     "Objective-C": ".m",
-    "PHP": ".php",
+    "OCaml": ".ml",
     "Pascal": ".pas",
     "Perl": ".pl",
+    "PHP": ".php",
     "Powershell": ".ps1",
     "Python": ".py",
     "R": ".r",
@@ -67,7 +67,7 @@ def get_column_lengths(table, cols):
 
 
 def generate_table(pairs, row_count, column_lengths):
-    table = dict(sorted(pairs.items()))
+    table = dict(sorted(pairs.items(), key=lambda pair: (pair[0].lower(), pair[1])))
     if any([a != b for a, b in zip(pairs.items(), table.items())]):
         print("WARNING: table is not sorted")
     rows = ["|" for _ in range(row_count)]
@@ -101,6 +101,12 @@ def get_factors(number):
     return [i for i in range(1, number + 1) if number % i == 0]
 
 
+def write_to_file(filename, string):
+    with open(filename, "w") as f:
+        f.write(string)
+    print(f"Output written to `{filename}`")
+
+
 if __name__ == "__main__":
     print(f"{len(table_items)} files, divisible by: {get_factors(len(table_items))}")
     row_count = len(table_items) // int(input("Complete columns: "))
@@ -108,6 +114,4 @@ if __name__ == "__main__":
         ["".join((k, v)) for k, v in table_items.items()], row_count
     )
     rows, cols = generate_table(table_items, row_count, column_lengths)
-    with open("copy_readme.md", "w") as f:
-        f.write(table_to_string(rows, cols, column_lengths))
-    print("Output written to `copy_readme.md`")
+    write_to_file("copy_readme.md", table_to_string(rows, cols, column_lengths))
