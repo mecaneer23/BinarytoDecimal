@@ -1,5 +1,6 @@
+#!/usr/bin/env fan
 class BinarytoDecimal {
-    Int BinaryToDecimal(Int binaryNumber) {
+    static Int BinaryToDecimal(Int binaryNumber) {
         Str value := binaryNumber.toStr()
         Int length := value.size()
         Int output := 0
@@ -17,11 +18,8 @@ class BinarytoDecimal {
         return output
     }
 
-    Void main() {
-        // the BinarytoDecimal function works
-        // although the cli input doesn't work right now...
-        echo("Binary Number: ")
-        input := Process()
-        echo(BinaryToDecimal((input.in.readLine()).toInt()))
+    static Void main() {
+        Env.cur.out.print("Binary Number: ").flush
+        echo(BinaryToDecimal(Env.cur.in.readLine.toInt))
     }
 }
