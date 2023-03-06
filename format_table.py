@@ -16,6 +16,7 @@ table_items = {
     "DogeScript": ".djs",
     "Elixir": ".exs",
     "F#": ".fsx",
+    "Fantom": ".fan",
     "Forth": ".fth",
     "Fortran": ".f90",
     "Gadot (GDScript)": ".gd",
