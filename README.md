@@ -32,6 +32,7 @@ Resolve by opening the file in question in vim and running the following command
 | [Haskell Style](BinarytoDecimal.haskell_style.py) | [Python](BinarytoDecimal.py)     |
 | [Tkinter](BinarytoDecimal.tkinter.py)             | [Python](BinarytoDecimal.py)     |
 | [Jupyter Notebook](BinarytoDecimal.ipynb)         | [Python](BinarytoDecimal.py)     |
+| [One line](BinarytoDecimal.one_line.py)           | [Python](BinarytoDecimal.py)     |
 
 ## Algorithm (when applicable)
 
