@@ -1,0 +1,17 @@
+include "std.porth"
+
+proc BinarytoDecimal int -- int in
+  //dup putu
+  
+end
+
+const NUM_CAP 256 end
+memory num NUM_CAP end
+
+proc main in
+  "Binary Number: " puts
+  NUM_CAP num stdin read
+  num @int BinarytoDecimal putu drop
+  "\n" puts
+end
+

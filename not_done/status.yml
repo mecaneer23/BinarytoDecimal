@@ -1,0 +1,57 @@
+Resources:
+    https://rosettacode.org/wiki/User_input/Text
+
+In progess:
+    erlang
+
+Not feasible (yet):
+    porth
+        (language needs to be further along/have documentation to be able to work effectively)
+    LOLCODE
+        (the language may not be able to do what I am asking of it)
+    pigeon
+        (Brian Will language - I don't have a way to run it)
+    haxe
+        (I am really confused with running it - it doesn't seem that complicated to write though)
+    neko
+        (there is no looping construct?)
+
+Not Started:
+    cobol
+        (https://tio.run/#cobol-gnu)
+        BinarytoDecimal.cbl
+    algol
+        (https://tio.run/#algol68g)
+        BinarytoDecimal.alg
+    assembly
+        (maybe generated from another language?)
+        BinarytoDecimal.asm
+    delphi
+        (pascal dialect)
+        BinarytoDecimal.pas?
+    smalltalk
+        (https://en.wikipedia.org/wiki/Smalltalk)
+        BinarytoDecimal.st
+    basic
+        --
+        BinarytoDecimal.bas
+	red (similar to rebol?)
+	hack (like php)
+	pony - seems pretty complicated (see hello world below)
+        ```
+        actor Main
+            new create(env: Env) =>
+                env.out.print("Hello, world!")
+        ```
+	purescript (if haskell and js had a baby)
+	elm (really just js in browser)
+    odin (https://odin-lang.org/)
+    idris (functional (first class types make it special)) (https://www.idris-lang.org/index.html)
+    futhark (functional) https://futhark-lang.org/
+    gleam https://gleam.run/
+    koka (also functional) https://koka-lang.github.io/koka/doc/index.html
+    grain (also functional) https://grain-lang.org/
+
+
+    solidity
+    verilog

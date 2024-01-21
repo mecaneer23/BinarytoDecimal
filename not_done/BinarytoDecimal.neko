@@ -1,0 +1,52 @@
+@ @ nekoc BinarytoDecimal.neko; neko BinarytoDecimal.n
+
+@ var binary_to_decimal = function(binary_number) {
+@     var value = $smake(binary_number);
+@     var length = $ssize(value);
+@     var output = 0;
+@     for (position in 0...length) {
+@         var char = $ssub(value, position, position + 1);
+@         if (char == '1') {
+@             output += Math.pow(2, length - 1 - position);
+@         } if (char == '0') {
+@             continue
+@         } else {
+@             return "Make sure you only input binary values";
+@         }
+@     }
+@     return output;
+@ }
+
+@ $print("hello neko world !\n");
+
+
+function BinarytoDecimal(binaryNumber:Int):Int {
+    var value = binaryNumber.toString()
+    var length = value.length
+    var output = 0
+    var position = 0
+    while(position < length) {
+        var chr = value[position]
+        if(chr == '1') {
+            output += Math.pow(2, (length-1-position))
+        } else if(chr == '0') {
+            continue
+        } else {
+            Sys.print("Make sure you only input binary values")
+            Sys.exit(-1)
+        }
+        position += 1
+    }
+    return output
+}
+
+function starting_point() {
+    Sys.print("Binary Number: ")
+    Sys.print(
+        BinarytoDecimal(
+            Std.parseInt(
+                Sys.readLine()
+            )
+        )
+    )
+}

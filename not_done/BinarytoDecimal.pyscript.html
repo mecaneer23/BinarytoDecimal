@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Binary-Decimal Converter</title>
+    <py-env>
+        - paths:
+            - ./BinarytoDecimal.py
+    </py-env>
+</head>
+
+<body style="background-color: white;">
+    <script src="BinarytoDecimal.py"></script>
+    <input type="text" placeholder="Binary Number: " id="bn">
+    <button id="calc" pys-onClick="setOutput">Calculate</button>
+    <p id="output">Decimal number:</p>
+    <py-script>
+        from js import document
+        import BinarytoDecimal
+
+        def setOutput():
+            document.getElementById("output").innerHTML = "Decimal number: " + BinarytoDecimal.BinarytoDecimal(document.getElementById("bn").value);
+            document.getElementById("bn").value = null;
+
+        def listener(event):
+            if event.keyCode == 13:
+                event.preventDefault()
+                document.getElementById("calc").click()
+        document.getElementById("bn").addEventListener("keyup", listener)
+    </py-script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Binary-Decimal Converter</title>
+    <py-env>
+        - paths:
+            - ./BinarytoDecimal.py
+    </py-env>
+</head>
+
+<body>
+    <div>
+        <span><input type="text" placeholder="Binary Number: " id="bn"></span>
+        <span><button id="calc" pys-onClick="set_output">Calculate</span>
+    </div>
+    <div id="output">Decimal number:</div>
+    <py-script>
+        import BinarytoDecimal
+        def set_output():
+            pyscript.write("output", f"Decimal number: {BinarytoDecimal.BinarytoDecimal(int(Element('bn').value))}")
+    </py-script>
+    <py-repl></py-repl>
+    <script>
+		document.getElementById("bn").addEventListener("keyup", function (event) {
+			if (event.keyCode === 13) {
+				event.preventDefault();
+				document.getElementById("calc").click();
+			}
+		});
+	</script>
+</body>
+
+</html>
