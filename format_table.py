@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+from typing import TypeVar
+
+T = TypeVar("T")
+
 table_items = {
     "Ada": ".adb",
     "Bash": ".sh",
@@ -57,17 +61,17 @@ table_items = {
 }
 
 
-def chunk(iterable, chunk_size=2):
+def chunk(iterable: list[T], chunk_size: int = 2) -> list[list[T]]:
     return [
         list(iterable)[i : i + chunk_size] for i in range(0, len(iterable), chunk_size)
     ]
 
 
-def get_column_lengths(table, cols):
+def get_column_lengths(table: list[str], cols: int) -> list[int]:
     return [len(max(i, key=len)) for i in chunk(table, cols)]
 
 
-def generate_table(pairs, row_count, column_lengths):
+def generate_table(pairs: dict[str, str], row_count: int, column_lengths: list[int]):
     table = dict(sorted(pairs.items(), key=lambda pair: (pair[0].lower(), pair[1])))
     if any([a != b for a, b in zip(pairs.items(), table.items())]):
         print("WARNING: table is not sorted")
@@ -87,9 +91,9 @@ def generate_table(pairs, row_count, column_lengths):
     return rows, rows[0].count("|") - 1
 
 
-def table_to_string(rows: list[str], cols: int, column_lengths):
+def table_to_string(rows: list[str], cols: int, column_lengths: list[int]) -> str:
     assert cols == len(column_lengths), f"{column_lengths =}, {cols =}"
-    output = "| Language" + " " * (column_lengths[0] + 12) + "|"
+    output: str = "| Language" + " " * (column_lengths[0] + 12) + "|"
     for i in range(cols - 1):
         output += " " * (column_lengths[i + 1] + 21) + "|"
     output += "\n|"
@@ -98,12 +102,12 @@ def table_to_string(rows: list[str], cols: int, column_lengths):
     return output + "\n" + "\n".join(rows)
 
 
-def get_factors(number):
+def get_factors(number: int):
     return [i for i in range(1, number + 1) if number % i == 0]
 
 
-def write_to_file(filename, string):
-    with open(filename, "w") as f:
+def write_to_file(filename: str, string: str) -> None:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(string)
     print(f"Output written to `{filename}`")
 
