@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BinarytoDecimal {
-    public static int BinarytoDecimal(Long binaryNumber) {
+    public static int binaryToDecimal(Long binaryNumber) {
         String value = Long.toString(binaryNumber);
         int length = value.length();
         int output = 0;
@@ -21,7 +21,7 @@ public class BinarytoDecimal {
     public static void main(String[] args) {
         System.out.print("Binary Number: ");
         Scanner inp = new Scanner(System.in);
-        System.out.println(BinarytoDecimal(inp.nextLong()));
+        System.out.println(binaryToDecimal(inp.nextLong()));
         inp.close();
     }
 }
