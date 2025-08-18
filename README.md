@@ -1,5 +1,7 @@
 # BinarytoDecimal
 
+![Screenshot](screenshot.png)
+
 Binary to decimal converters in many languages
 
 ## File endings error
